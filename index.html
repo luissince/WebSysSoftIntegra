@@ -1,0 +1,582 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>SysSoft Integra - web 🌐</title>
+  <meta name="description" content="Sistema web y escritorio para realizar ventas, compras, control de inventario, facturación electrónica, etc.">
+  <meta name="keywords" content="Facturación electrónica, ventas de productos, compras, inventario de productos, kardex, cuentas por pagar, cuentas por cobrar"/>
+  <meta name="author" content="SysSoft Integra" />
+  <meta name="copyright" content="SysSoft Integra" />
+  <meta name="robots" content="index"/>
+  <meta http-equiv="cache-control" content="no-cache"/>
+
+  <!-- Favicons -->
+  <link href="assets/img/logo.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+
+
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+
+   <!-- Messenger Plugin de chat Code -->
+   <div id="fb-root"></div>
+
+   <!-- Your Plugin de chat code -->
+   <div id="fb-customer-chat" class="fb-customerchat">
+   </div>
+ 
+   <script>
+     var chatbox = document.getElementById('fb-customer-chat');
+     chatbox.setAttribute("page_id", "100473614875902");
+     chatbox.setAttribute("attribution", "biz_inbox");
+   </script>
+ 
+   <!-- Your SDK code -->
+   <script>
+     window.fbAsyncInit = function() {
+       FB.init({
+         xfbml            : true,
+         version          : 'v12.0'
+       });
+     };
+ 
+     (function(d, s, id) {
+       var js, fjs = d.getElementsByTagName(s)[0];
+       if (d.getElementById(id)) return;
+       js = d.createElement(s); js.id = id;
+       js.src = 'https://connect.facebook.net/es_LA/sdk/xfbml.customerchat.js';
+       fjs.parentNode.insertBefore(js, fjs);
+     }(document, 'script', 'facebook-jssdk'));
+   </script>
+
+
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-none d-lg-flex align-items-center fixed-top ">
+    <div class="container d-flex align-items-center">
+      <div class="contact-info mr-auto">
+        <ul>
+          <li><i class="icofont-envelope"></i><a href="mailto:syssoftintegra@gmail.com" title="correo">syssoftintegra@gmail.com</a></li>
+          <li><i class="icofont-whatsapp"></i><a href="https://api.whatsapp.com/send?phone=51966750883" target="_blank" title="whatsapp">+51 966750883</a> | <a href="https://api.whatsapp.com/send?phone=51931341082" target="_blank" title="whatsapp">+51 931341082</a></li>
+          <li><i class="icofont-facebook"></i><a href="https://www.facebook.com/SysSoftIntegra" target="_blank" title="facebook">SysSoftIntegra</a></li>
+        </ul>
+      </div>
+      <div class="cta">
+        <a href="#about" class="scrollto"> ver demo</a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top ">
+    <div class="container d-flex align-items-center">
+
+      <a href="#header" class="logo mr-auto scrollto"><img src="assets/img/logo.png" alt="" class="img-fluid"><span class="text-white h5"> SysSoftIntegra</span></a>
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active" title="Inicio"><a href="#header"><i class="icofont-home h5"></i></a></li>
+          <li><a href="#about">Nosotros</a></li>
+          <li><a href="#services">Caracteristicas</a></li>
+          <li><a href="#pricing">Precios</a></li>
+          <li><a href="#contact">Contacto</a></li>
+
+        </ul>
+      </nav>
+
+    </div>
+  </header>
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-cntent-center align-items-center">
+    <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
+
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container pt-2">
+          <h2 class="animate__animated animate__fadeInDown">Facturación y boletas electrónicas</h2>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="pl-5 pr-5">
+                <h5 class="text-white">Con <strong>SisSoftIntegra</strong> es la forma más fácil de emitir los comprobantes. Cuenta con una interfaz muy fácil y amigable que lo puede entender cualquiera. ¡Que esperas!</h5>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="pl-5 pr-5">
+                <img width="200" src="./assets/img/modulo-venta.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <a href="https://api.whatsapp.com/send?phone=51966750883" target="_blank"  class="btn-get-started animate__animated animate__fadeInUp ">contactar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container pt-2">
+          <h2 class="animate__animated animate__fadeInDown">Impresora POS-D BASIC 230</h2>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="pl-5 pr-5">
+                <h5 class="text-white">Impresora térmica de 80 mm, cable USB, cable de poder, adaptador de corriente 220v - 12v, velocidad de impreción de 260 mm/s, manual y CD de instalación. Soporta sistemas operativos: Windows 7, 8.1, 10 y 11</h5>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="pl-5 pr-5">
+                <img width="130" src="./assets/img/basic-230.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <a href="https://api.whatsapp.com/send?phone=51966750883" target="_blank"  class="btn-get-started animate__animated animate__fadeInUp ">contactar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container pt-2">
+          <h2 class="animate__animated animate__fadeInDown">Codigo de barras</h2>
+          <div class="row">
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="pl-5 pr-5">
+                <h5 class="text-white">Lector de código de barras imager 1D y 2D con excelente capacidad de lectura de códigos incluso sobre pantallas electrónicas y reconstrucción de códigos dañados o sucios. Grado de protección IP-54</h5>
+              </div>
+            </div>
+            <div class="col-lg-6 col-md-6 col-sm-12">
+              <div class="pl-5 pr-5">
+                <img width="150" src="./assets/img/codigo-barras.png"/>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-6 col-md-6">
+              <a href="https://api.whatsapp.com/send?phone=51966750883" target="_blank"  class="btn-get-started animate__animated animate__fadeInUp ">contactar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+
+    </div>
+  </section>
+
+  <main id="main">
+
+    <!-- ======= Icon Boxes Section ======= -->
+    <section id="icon-boxes" class="icon-boxes">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-laptop"></i></div>
+              <h4 class="title text-primary">Venta de equipos</h4>
+              <p class="description">Contamos con equipos para punto de venta como: impresoras tiketeras, lectoras de codigo, pantallas tactiles, etc.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxs-file"></i></div>
+              <h4 class="title text-primary">Facturación y boletas electrónicas</h4>
+              <p class="description">Crea facturas y boletas, envíalas por correo e imprímelas con todos los requisitos de la SUNAT.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bx-bookmark"></i></div>
+              <h4 class="title text-primary">Cotizaciones</h4>
+              <p class="description">Crea cotizaciones y luego conviértelas en facturas, boletas o envialas por whatsapp.</p>
+            </div>
+          </div>
+
+          <div class="col-md-6 col-lg-3 d-flex align-items-stretch mb-5 mb-lg-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <div class="icon"><i class="bx bxl-android"></i></div>
+              <h4 class="title text-primary">App móvil<h6 class="text-danger font-italic">PRONTO</h6></h4>
+              <p class="description">Prodra vender, cotizar, ver los distintos tipos de reportes y mas desde el móvil.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ======= About Us Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Conocenos</h2>
+          <p>Somos una solución en la Nube para llevar la administración y facturación de pequeños negocios, Pymes y emprendedores de forma pragmatica y segura.</p>
+        </div>
+
+        <div class="row content">
+          <div class="col-lg-6">
+            <p>
+              Más de 25 emprendimientos que se han registrado.
+              Prueba las características de <span class="text-primary"><strong>SysSoftIntegra</strong></span> en la verción demostrativa.
+            </p>
+            <ul>
+              <li><i class="ri-check-double-line"></i> Controla y personaliza cada detalle de tus ítems de venta.</li>
+              <li><i class="ri-check-double-line"></i> ¡Crea tus Facturas y Boletas Electrónicas de forma fácil y rápida!</li>
+              <li><i class="ri-check-double-line"></i> Todas las funciones para administrar, controlar y hacer crecer tu pyme o negocio.</li>
+            </ul>
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0">
+            <p>
+              Con el Sistema en la nube prodras crea tus facturas, boletas, cotizaciones y hacer mas operaciones en segundos y desde cualquier lugar. Usa las siguientes credenciales para accesar:
+            </p>
+            <ul>
+              <li><i class="bx bxs-user"></i> Usuario: <span class="text-secondary">admin</span></li>
+              <li><i class="bx bxs-key"></i> Contraseña: <span class="text-secondary">admin</span></li>
+            </ul>
+            <a href="#" class="btn-learn-more">ver demo</a>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Us Section -->
+
+    <!-- ======= Clients Section ======= -->
+    <section id="clients" class="clients">
+      <div class="container" data-aos="zoom-in">
+        <div class="col-lg-12 col-md-12 col-sm-12 text-center section-title">
+          <p class="">Conoce a nuestros <strong>clientes</strong> que respaldan nuestro trabajo.</p>
+        </div>
+        <div class="owl-carousel clients-carousel">
+          <img src="assets/img/clients/client-1.png" alt="">
+          <img src="assets/img/clients/client-2.png" alt="">
+          <img src="assets/img/clients/client-3.png" alt="">
+          <img src="assets/img/clients/client-4.png" alt="">
+          <img src="assets/img/clients/client-5.png" alt="">
+          <img src="assets/img/clients/client-6.png" alt="">
+          <img src="assets/img/clients/client-7.png" alt="">
+          <img src="assets/img/clients/client-8.png" alt="">
+        </div>
+      </div>
+      
+    </section>
+
+    <!-- ======= Caracteristicas Section ======= -->
+    <section id="services" class="services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Caracteristicas</h2>
+          <p>Sistema contable, administrativo y de facturación en la Nube.</p>
+          <p>Descubre todas las características diseñadas para que tomes el control de tu empresa.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon-box">
+              <i class="icofont-computer"></i>
+              <h4 class="title text-primary">Reportes inteligentes</h4>
+              <p>Genera tus reportes en tiempo real para analizar tu negocio: ventas, productos más vendidos, flujo de efectivo, balance general, estado de resultados, impuestos, lo que debes, lo que te deben.</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon-box">
+              <i class="icofont-chart-bar-graph"></i>
+              <h4 class="title text-primary">Cotizaciones</h4>
+              <p>Crea cotizaciones y luego conviértelas en facturas o boletas.</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon-box">
+              <i class="icofont-image"></i>
+              <h4 class="title text-primary">Clientes</h4>
+              <p>Lleva el registro de todos tus clientes, el histórico de tus ventas, los saldos y todos sus movimientos.</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon-box">
+              <i class="icofont-settings"></i>
+              <h4 class="title text-primary">Proveedores</h4>
+              <p>Lleva el registro unificado de proveedores y utilicelo cuando usted los requiera.</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon-box">
+              <i class="icofont-earth"></i>
+              <h4 class="title text-primary">Control de Usuarios</h4>
+              <p>Controla las acciones de cada usuario en la plataforma de acuerdo a su perfil.</p>
+            </div>
+          </div>
+          <div class="col-md-6 d-flex align-items-stretch mt-4 mt-md-0" data-aos="fade-up" data-aos-delay="600">
+            <div class="icon-box">
+              <i class="icofont-tasks-alt"></i>
+              <h4 class="title text-primary">Inventario al día</h4>
+              <p>Controla la entrada y salida de todos los productos de tus bodegas en tiempo real.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  
+    <!-- ======= Pricing Section ======= -->
+    <section id="pricing" class="pricing section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Precios</h2>
+          <p>¿Aún no encuentras el plan ideal para ti?</p>
+          <p>Impulsa tu negocio con las mejores opciones que tenemos para tí.</p>
+        </div>
+
+        <div class="row">
+
+          <div class="col-lg-4 col-md-4" data-aos="fade-up" data-aos-delay="100">
+            <div class="box featured">
+              <h3>Versión desktop</h3>
+              <h4><sup>s/</sup>3800.00<span> / <strong>de por vida</strong></span></h4>
+              <ul>
+                <li>Ventas ilimitadas</li>
+                <li>Compras ilimitadas</li>
+                <li>Clientes / proveedores ilimitados</li>
+                <li>Control de stock</li>
+                <li>Kardex de producto</li>
+                <li>Capacitación y soporte</li>
+                <li>Facturación y boletas electrónicas</li>
+                <li> <strong>Y muchas mas funcionalidades...</strong><li></li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="https://api.whatsapp.com/send?phone=51966750883" target="_blank" class="btn-buy">Contactar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 mt-5 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Pyme</h3>
+              <h4><sup>S/</sup>80.00<span> / <strong>mes</strong></span></h4>
+              <ul>
+                <li>Ventas ilimitadas</li>
+                <li>Compras ilimitadas</li>
+                <li>Clientes / proveedores ilimitados</li>
+                <li>Control de stock</li>
+                <li>Kardex de producto</li>
+                <li>Capacitación y soporte</li>
+                <li>Facturación y boletas electrónicas</li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="https://api.whatsapp.com/send?phone=51931341082" target="_blank" class="btn-buy">Contactar</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-4 mt-5 mt-md-0" data-aos="fade-up" data-aos-delay="200">
+            <div class="box featured">
+              <h3>Business</h3>
+              <h4><sup>S/</sup>120.00<span> / <strong>mes</strong></span></h4>
+              <ul>
+                <li>Ventas ilimitadas</li>
+                <li>Compras ilimitadas</li>
+                <li>Clientes / proveedores</li>
+                <li>Control de stock</li>
+                <li>Kardex de producto</li>
+                <li>Capacitación y soporte</li>
+                <li>Facturación y boletas electrónicas</li>
+                <li> <strong>Y muchas mas funcionalidades...</strong><li>
+              </ul>
+              <div class="btn-wrap">
+                <a href="https://api.whatsapp.com/send?phone=51966750883" target="_blank" class="btn-buy">Contactar</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section> 
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Contactanos</h2>
+        </div>
+
+        <div class="row mt-1 d-flex justify-content-end" data-aos="fade-right" data-aos-delay="100">
+
+          <div class="col-lg-5">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Ubicacion:</h4>
+                <p>Jr. Ancash #1055 - Huancayo, Perú</p>
+                <p>Carr. Central #15487 - Ate, Perú</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>syssoftintegra@gmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Lamar:</h4>
+                <p>+51 966750883</p>
+                <p>+51 931341082</p>
+              </div>
+
+            </div>
+
+          </div>
+
+          <div class="col-lg-6 mt-5 mt-lg-0" data-aos="fade-left" data-aos-delay="100">
+
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="form-row">
+                <div class="col-md-6 form-group">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Tu nombre" data-rule="minlen:4" data-msg="Ingrese al menos 4 caracteres" />
+                  <div class="validate"></div>
+                </div>
+                <div class="col-md-6 form-group">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Tu correo" data-rule="email" data-msg="Por favor introduzca una dirección de correo electrónico válida" />
+                  <div class="validate"></div>
+                </div>
+              </div>
+              <div class="form-group">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="El asunto" data-rule="minlen:4" data-msg="Ingrese al menos 8 caracteres de asunto" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" name="message" rows="5" data-rule="required" data-msg="Por favor escribe algo para nosotros" placeholder="Tu mensaje"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Cargando...</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Enviar Mensaje</button></div>
+            </form>
+
+          </div>
+          <div class="col-lg-12 col-md-12 col-sm-12 text-center pt-3">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2127.3460113100987!2d-75.20746218573488!3d-12.073088306552798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x910e96521970ddf9%3A0xb5b54b8cfec2edea!2sAncash%201053%2C%20Huancayo%2012001!5e0!3m2!1ses-419!2spe!4v1640794778878!5m2!1ses-419!2spe" width="950" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-4 footer-links">
+            <h4>Link de Interes</h4>
+            <ul>
+              <li><i class="bx bx-chevron-right"></i> <a href="#">Inicio</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#about">Nosotros</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#pricing">Precios</a></li>
+            </ul>
+          </div>
+
+          <div class="col-lg-4 col-md-4 footer-contact">
+            <h4>Contact Us</h4>
+            <p>
+              Jr. Ancash #1055 <br>
+              Junín, Huancayo<br>
+              Perú <br><br>
+              <strong>Celular :</strong> +51 966750883<br>
+              <strong>Email :</strong> syssoftintegra@gmail.com<br>
+            </p>
+
+          </div>
+
+          <div class="col-lg-4 col-md-4 footer-info">
+            <h3>Acerca de SysSoftIntegra</h3>
+            <p>En SysSoftIntegra trabajamos para ayudar a los negocios a crecer organizados.</p>
+            <div class="social-links mt-3">
+              <a href="https://www.youtube.com/channel/UC1yuF3XITbRHAcwud_78BXQ" target="_blank" title="youtube SysSoftIntegra"><i class="bx bxl-youtube"></i></a>
+              <a href="https://www.facebook.com/SysSoftIntegra" target="_blank" title="facebook SysSoftIntegra"><i class="bx bxl-facebook"></i></a>
+              <a href="https://m.me/SysSoftIntegra" target="_blank" title="messenger SysSoftIntegra"><i class="bx bxl-messenger"></i></a>
+              <a href="https://api.whatsapp.com/send?phone=51966750883" target="_blank" title="whatsapp SysSoftIntegra"><i class="bx bxl-whatsapp"></i></a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright. Todos los derechos reservados
+      </div>
+      <div class="credits">
+        Desarrollado por <a href="#"><strong>SysSoftIntegra</strong></a>
+      </div>
+    </div>
+  </footer>
+
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+  <div id="preloader"></div>
+
+
+ 
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
